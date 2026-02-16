@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(220, 212, 197, 1);
+  font-family: "hammersmith", sans-serif;
+}
+
+/* CSS KODE TIL HEADER */
+
+header {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  color: #9d9d9d;
+}
+
+.row2-container {
+  display: flex;
+  gap: 20px;
+}
+
+.row2-box {
+  background: #f4f4f4;
+  border: 2px solid #838383;
+  border-radius: 15px;
+  padding: 15px 25px;
+}
+
+#garbage_img {
+  width: 40px;
+}
+
+/* CSS TIL VORES BURGER MENU */
+
+.burger {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: none;
+  position: relative;
+}
+
+.burger .line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transition: 0.3s ease;
+}
+
+.burger .line:nth-child(1) {
+  top: 0;
+}
+.burger .line:nth-child(2) {
+  top: 9px;
+}
+.burger .line:nth-child(3) {
+  top: 18px;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+/* CSS TIL MOBILE VERSION */
+
+@media (max-width: 700px) {
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    inset: 0;
+    background: rgba(220, 212, 197, 1);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  nav.active .menu {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu li.row1 {
+    width: 90%;
+    max-width: 350px;
+    background: #f4f4f4;
+    border: 3px solid #8f8f8f;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .row2-container {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .row2-box {
+    flex: 1;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid #8f8f8f;
+    border-radius: 10px;
+  }
+}
