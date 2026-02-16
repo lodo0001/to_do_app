@@ -34,7 +34,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #9d9d9d;
+  color: #797979;
 }
 
 .row2-container {
@@ -47,6 +47,19 @@ nav {
   border: 2px solid #838383;
   border-radius: 15px;
   padding: 15px 25px;
+  transition: 0.2s ease;
+}
+
+.row2-box:hover {
+  transform: translateY(-5px);
+}
+
+.row1 {
+  transition: 0.2s ease;
+}
+
+.row1:hover {
+  transform: translateY(-5px);
 }
 
 #garbage_img {
