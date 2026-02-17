@@ -119,13 +119,13 @@ nav {
     position: fixed;
     inset: 0;
     background: rgba(220, 212, 197, 1);
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 
     opacity: 0;
+    pointer-events: none; /* <--- tilføj denne linje */
     transition: 0.3s ease;
   }
 
