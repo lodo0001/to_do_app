@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO</title>
+    <script src="new_list.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="general.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <!-- 1.række: Add new to do list -->
+          <li class="row1"><a href="new_list.html">+ Add new TO DO LIST</a></li>
+
+          <!-- 2. række: recent + completed -->
+          <li class="row2-container">
+            <a href="index.html" class="row2-box">recent</a>
+            <a href="index.html" class="row2-box">completed</a>
+          </li>
+          <!-- 3. række: slettet lister -->
+          <li class="row1">
+            <img id="garbage_img" src="img/garbage.png" alt="garbage" />
+          </li>
+        </ul>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="menu.js"></script>
+
+    <main>
+      <h1>TO DO LIST</h1>
+      <ul id="items" class="todo_container"></ul>
+
+      <template id="itemTemplate">
+        <li class="todo_item">
+          <input type="checkbox" class="item_completed" />
+          <span class="item_text"></span>
+          <button class="delete_btn">🗑</button>
+        </li>
+      </template>
+
+      <button id="add">+ Add task</button>
+    </main>
+  </body>
+</html>
