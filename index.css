@@ -18,7 +18,7 @@ li {
   margin-bottom: 10px;
 }
 
-.item_completed:checked+.item_description {
+.item_completed:checked + .item_description {
   text-decoration: line-through;
   opacity: 0.8;
 }
@@ -28,7 +28,6 @@ li {
   opacity: 0.6;
 }
 
-
 input {
   border-radius: 5px;
   border-style: none;
@@ -36,10 +35,11 @@ input {
 }
 
 button {
-  color: rgb(255, 254, 254);
+  color: rgb(255, 255, 255);
   background: none;
   border: none;
   cursor: pointer;
+  margin: 20px;
 }
 
 button:hover {
