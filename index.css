@@ -1,3 +1,80 @@
 h1 {
   font-family: "hammersmith";
 }
+
+li {
+  list-style: none;
+}
+
+.addInput {
+  gap: 10px;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.item_description {
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.item_completed:checked+.item_description {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+
+input {
+  border-radius: 5px;
+  border-style: none;
+  filter: drop-shadow(1px 2px 3px #2121214d);
+}
+
+button {
+  color: rgb(255, 254, 254);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgb(225, 250, 215);
+}
+
+.todo_item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  width: 50%;
+}
+
+.todo_item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.item_completed {
+  accent-color: green;
+}
+
+.delete_btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.delete_btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
